@@ -1,0 +1,4778 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/AragonFactory.sol": {
+      "lastModificationDate": 1618241035705,
+      "contentHash": "7466db52ddccdf06cb7a96f10ae1add7",
+      "sourceName": "contracts/AragonFactory.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./vocdoni/token-storage-proof.sol",
+        "./govern/GovernBaseFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "AragonFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/token-storage-proof.sol": {
+      "lastModificationDate": 1618246286522,
+      "contentHash": "7d5a081e7780d728b243c5e1c62ddd25",
+      "sourceName": "contracts/vocdoni/token-storage-proof.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./vendor/openzeppelin/token/ERC20/IERC20.sol",
+        "./common.sol",
+        "./lib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "TokenStorageProof"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1618245864373,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/common.sol": {
+      "lastModificationDate": 1618243092841,
+      "contentHash": "c135357fd8b4c250fe343cfb826576b6",
+      "sourceName": "contracts/vocdoni/common.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "IGenesisStore",
+        "INamespaceStore",
+        "IProcessStore",
+        "IResultsStore",
+        "ITokenStorageProof"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/lib.sol": {
+      "lastModificationDate": 1618224505958,
+      "contentHash": "a1535a370fdb3b4f52d3e36529f24876",
+      "sourceName": "contracts/vocdoni/lib.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "ContractSupport",
+        "RLP",
+        "SafeUint8",
+        "TrieProof"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/results.sol": {
+      "lastModificationDate": 1618224506034,
+      "contentHash": "ac60ca02aa66774e65b9260f362903bd",
+      "sourceName": "contracts/vocdoni/results.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./base.sol",
+        "./common.sol",
+        "./lib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Results"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/base.sol": {
+      "lastModificationDate": 1618224505867,
+      "contentHash": "d798ca929e7ca4844821440643c2a9d1",
+      "sourceName": "contracts/vocdoni/base.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./lib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Chained",
+        "Owned"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/processes.sol": {
+      "lastModificationDate": 1618246312464,
+      "contentHash": "8e033f287b456b1104f9dac9242a70c1",
+      "sourceName": "contracts/vocdoni/processes.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./vendor/openzeppelin/token/ERC20/IERC20.sol",
+        "./base.sol",
+        "./common.sol",
+        "./lib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.7.0"
+      ],
+      "artifacts": [
+        "Processes"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC777/ERC777.sol": {
+      "lastModificationDate": 1618246162617,
+      "contentHash": "a6af3a6207e26112157f873898028134",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC777/ERC777.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../token/ERC20/IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Context.sol",
+        "./IERC777.sol",
+        "./IERC777Recipient.sol",
+        "./IERC777Sender.sol",
+        "../../utils/Address.sol",
+        "../../introspection/IERC1820Registry.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC777"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Context.sol": {
+      "lastModificationDate": 1618224505831,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777.sol": {
+      "lastModificationDate": 1618224505825,
+      "contentHash": "5833aafefffbdbdb5f5ee567a3f51b86",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777Recipient.sol": {
+      "lastModificationDate": 1618224505826,
+      "contentHash": "c611b2349e7afbb03e4fd314878861e0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777Recipient.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Recipient"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777Sender.sol": {
+      "lastModificationDate": 1618224505826,
+      "contentHash": "c59a76b8a23eaef6f259de54f672d59e",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC777/IERC777Sender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC777Sender"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/math/SafeMath.sol": {
+      "lastModificationDate": 1618241056515,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Address.sol": {
+      "lastModificationDate": 1618224505829,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/IERC1820Registry.sol": {
+      "lastModificationDate": 1618224505785,
+      "contentHash": "820888c202bc007f6112423ee95b9cf0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/IERC1820Registry.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Registry"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/UpgradeableBeacon.sol": {
+      "lastModificationDate": 1618224505804,
+      "contentHash": "068587e17b1e1c35d156353c006b1b7a",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/UpgradeableBeacon.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IBeacon.sol",
+        "../access/Ownable.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableBeacon"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/IBeacon.sol": {
+      "lastModificationDate": 1618224505800,
+      "contentHash": "4db9e23bbd1f4807251e2533af88b4f7",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/IBeacon.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IBeacon"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/access/Ownable.sol": {
+      "lastModificationDate": 1618224505701,
+      "contentHash": "6748815a5b45c4aeeda56819f41190e0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/ProxyAdmin.sol": {
+      "lastModificationDate": 1618224505802,
+      "contentHash": "61e1e11a965a3a8df0f2252ea2828584",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol",
+        "./TransparentUpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1618224505803,
+      "contentHash": "572da86d0eb185b41f85df7d2d75378b",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/UpgradeableProxy.sol": {
+      "lastModificationDate": 1618224505804,
+      "contentHash": "c163cbd51d0173b71c8137b0ddf1e0ba",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/UpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "UpgradeableProxy"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/Proxy.sol": {
+      "lastModificationDate": 1618224505801,
+      "contentHash": "52841a5095656ecbf7bc86cd6c114699",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/BeaconProxy.sol": {
+      "lastModificationDate": 1618224505799,
+      "contentHash": "b1ab56e3db4a2db6e1d984975104ba76",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/BeaconProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol",
+        "./IBeacon.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "BeaconProxy"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/payment/escrow/Escrow.sol": {
+      "lastModificationDate": 1618246221676,
+      "contentHash": "9c1aa505964a7172971dbcaafca78e6c",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/payment/escrow/Escrow.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../access/Ownable.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Escrow"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/payment/PullPayment.sol": {
+      "lastModificationDate": 1618224505791,
+      "contentHash": "629b6b6c6ce2547851a7a650e1336380",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/payment/PullPayment.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./escrow/Escrow.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "PullPayment"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Snapshot.sol": {
+      "lastModificationDate": 1618246202121,
+      "contentHash": "e18b83ebebe2ae229766f0b6bb0e9d28",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Snapshot.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "../../utils/Arrays.sol",
+        "../../utils/Counters.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Snapshot"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Arrays.sol": {
+      "lastModificationDate": 1618224505830,
+      "contentHash": "1dbebf76b7e090e7b226ed3fcc29058b",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Arrays.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/Math.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Arrays"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Counters.sol": {
+      "lastModificationDate": 1618246108946,
+      "contentHash": "304a56eb1322144704fb39f8c7e6d722",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1618245787380,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/math/Math.sol": {
+      "lastModificationDate": 1618224505786,
+      "contentHash": "e5c844515b04deabacef7eb872abc384",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/math/Math.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Capped.sol": {
+      "lastModificationDate": 1618224505813,
+      "contentHash": "c7b90bb47793b219e087d0906b6dc502",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Pausable.sol": {
+      "lastModificationDate": 1618224505813,
+      "contentHash": "42c0638e45b2c33154488610fe3091fe",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Pausable.sol": {
+      "lastModificationDate": 1618224505835,
+      "contentHash": "6960b40911542e6004ab95031ef9c3b9",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Pausable.sol": {
+      "lastModificationDate": 1618224505819,
+      "contentHash": "46f79ddd76e77a7c5bf841b830d0ed1e",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC721.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Pausable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1618246186921,
+      "contentHash": "2d9804eb2b6f41ea0a65115e154d90eb",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1618224505820,
+      "contentHash": "e82621b83943f11c44988c60e83d6ebc",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1618224505821,
+      "contentHash": "370e7a48f316401b5063bcb604843e1b",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1618224505821,
+      "contentHash": "eaebc3874248c26f6ea0b13b9a140a94",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1618224505822,
+      "contentHash": "fad0b3f4424bdbb4b35467b29ea8d334",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/ERC165.sol": {
+      "lastModificationDate": 1618224505781,
+      "contentHash": "08f854e2dd3c262845bba38c9b48e4e0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1618224505834,
+      "contentHash": "db7b1afdb2c204e1e52100b79f0c847e",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1618224505834,
+      "contentHash": "b1bb8570824c668943149211d74d6c51",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Strings.sol": {
+      "lastModificationDate": 1618224505838,
+      "contentHash": "c86a31bacf868d392eda08a0eccc4735",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/IERC165.sol": {
+      "lastModificationDate": 1618224505784,
+      "contentHash": "0d62a8380952235f135dae91590f90a3",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Burnable.sol": {
+      "lastModificationDate": 1618224505818,
+      "contentHash": "ecaa795345e7a1731adc7e58c9812942",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Burnable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Burnable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/presets/ERC721PresetMinterPauserAutoId.sol": {
+      "lastModificationDate": 1618224505796,
+      "contentHash": "88efc77587a940f73f1b3927382c3dd0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/presets/ERC721PresetMinterPauserAutoId.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Counters.sol",
+        "../token/ERC721/ERC721.sol",
+        "../token/ERC721/ERC721Burnable.sol",
+        "../token/ERC721/ERC721Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721PresetMinterPauserAutoId"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/access/AccessControl.sol": {
+      "lastModificationDate": 1618224505700,
+      "contentHash": "54eb0b53c109558e8312811342e95bf0",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/EnumerableSet.sol",
+        "../utils/Address.sol",
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/drafts/ERC20Permit.sol": {
+      "lastModificationDate": 1618224505778,
+      "contentHash": "2fe7726fa4d3761f947524c4a1e3c90e",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/drafts/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol",
+        "./IERC20Permit.sol",
+        "../cryptography/ECDSA.sol",
+        "../utils/Counters.sol",
+        "./EIP712.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/drafts/IERC20Permit.sol": {
+      "lastModificationDate": 1618224505779,
+      "contentHash": "554ef6825dd2112860a7f82be25dab45",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/drafts/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1618224505773,
+      "contentHash": "373a483bb0a88668c0735924d84f50f1",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/drafts/EIP712.sol": {
+      "lastModificationDate": 1618224505777,
+      "contentHash": "fc999322255c14bf39f2047b1b27eefa",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/drafts/EIP712.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipientSignature.sol": {
+      "lastModificationDate": 1618224505695,
+      "contentHash": "cfa3c366a1a8c8b8411df236b763cc20",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipientSignature.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./GSNRecipient.sol",
+        "../cryptography/ECDSA.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "GSNRecipientSignature"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipient.sol": {
+      "lastModificationDate": 1618224505693,
+      "contentHash": "6019905a6ca3196a177917e04f5b29a3",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipient.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol",
+        "./IRelayRecipient.sol",
+        "./IRelayHub.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "GSNRecipient"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/IRelayRecipient.sol": {
+      "lastModificationDate": 1618224505697,
+      "contentHash": "0bf08baf48262eb41bc206529963621d",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/IRelayRecipient.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IRelayRecipient"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/IRelayHub.sol": {
+      "lastModificationDate": 1618224505696,
+      "contentHash": "3d76829bda93b091eafa44820d8a7596",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/IRelayHub.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IRelayHub"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipientERC20Fee.sol": {
+      "lastModificationDate": 1618246243677,
+      "contentHash": "a86a12ea11145a9dec97e022a4102d8c",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/GSNRecipientERC20Fee.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol",
+        "./GSNRecipient.sol",
+        "../access/Ownable.sol",
+        "../token/ERC20/SafeERC20.sol",
+        "../token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "GSNRecipientERC20Fee",
+        "__unstable__ERC20Owned"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1618246193218,
+      "contentHash": "f196329e9e2dc9e18c798ee2db720104",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "./IERC20.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/TokenTimelock.sol": {
+      "lastModificationDate": 1618224505816,
+      "contentHash": "ed10a598474421087708cfd3967b66a3",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/TokenTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TokenTimelock"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/presets/ERC20PresetMinterPauser.sol": {
+      "lastModificationDate": 1618224505795,
+      "contentHash": "683b54445da8c95e82d8d8e20e81e544",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/presets/ERC20PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../token/ERC20/ERC20.sol",
+        "../token/ERC20/ERC20Burnable.sol",
+        "../token/ERC20/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20PresetMinterPauser"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Burnable.sol": {
+      "lastModificationDate": 1618224505812,
+      "contentHash": "1603b7aab78c87467dde869fd19ec86b",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC20/ERC20Burnable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Burnable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/presets/ERC20PresetFixedSupply.sol": {
+      "lastModificationDate": 1618224505795,
+      "contentHash": "23bb755b4b906d8c6599ea7351a380d2",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/presets/ERC20PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20Burnable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "ERC20PresetFixedSupply"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/presets/ERC1155PresetMinterPauser.sol": {
+      "lastModificationDate": 1618224505794,
+      "contentHash": "387778bbc28daff594436c04259584c5",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/presets/ERC1155PresetMinterPauser.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/AccessControl.sol",
+        "../utils/Context.sol",
+        "../token/ERC1155/ERC1155.sol",
+        "../token/ERC1155/ERC1155Burnable.sol",
+        "../token/ERC1155/ERC1155Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155PresetMinterPauser"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1618246211608,
+      "contentHash": "9ee5249b0e44f06f6a3f90238448cb54",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../math/SafeMath.sol",
+        "./IERC1155.sol",
+        "./IERC1155MetadataURI.sol",
+        "./IERC1155Receiver.sol",
+        "../../utils/Context.sol",
+        "../../introspection/ERC165.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Burnable.sol": {
+      "lastModificationDate": 1618224505806,
+      "contentHash": "e9e23a67a9d60cd0e6d133323b704b8d",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Burnable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Burnable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Pausable.sol": {
+      "lastModificationDate": 1618224505808,
+      "contentHash": "1c9983634bec9d2c8dbdd8c3ef210895",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155.sol",
+        "../../utils/Pausable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Pausable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1618224505809,
+      "contentHash": "cb9dc62067a205eeab4f390c72c7fe14",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1618224505809,
+      "contentHash": "9a313e25e2a837a50f7ae87017539457",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155MetadataURI.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155MetadataURI"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1618224505810,
+      "contentHash": "27af002e8fc1118d099c99fc8852bb73",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/IERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1155Receiver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Receiver.sol": {
+      "lastModificationDate": 1618224505808,
+      "contentHash": "69c3911c0b2e8ed32652765179023865",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1155Receiver.sol",
+        "../../introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Receiver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Holder.sol": {
+      "lastModificationDate": 1618224505807,
+      "contentHash": "ca5387e1c39109d459f2ff8f22deafd4",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC1155/ERC1155Holder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC1155Receiver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1155Holder"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/access/TimelockController.sol": {
+      "lastModificationDate": 1618246251371,
+      "contentHash": "d3c44c51dc0a825b55ebb6eabdf12ab8",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/access/TimelockController.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol",
+        "./AccessControl.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.12 <0.8.0"
+      ],
+      "artifacts": [
+        "TimelockController"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/payment/PaymentSplitter.sol": {
+      "lastModificationDate": 1618246229145,
+      "contentHash": "53e3dcf16b7cad93133e36b99fe43959",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/payment/PaymentSplitter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol",
+        "../utils/Context.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "PaymentSplitter"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/GSN/Context.sol": {
+      "lastModificationDate": 1618224505692,
+      "contentHash": "a02aa4ae53018d92603a3ead2c365958",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Holder.sol": {
+      "lastModificationDate": 1618224505819,
+      "contentHash": "683d46b8e6a400847a831fc9623233cf",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/token/ERC721/ERC721Holder.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Receiver.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Holder"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/payment/escrow/ConditionalEscrow.sol": {
+      "lastModificationDate": 1618224505792,
+      "contentHash": "aa3e8c91094948828e236ec0a5603e58",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/payment/escrow/ConditionalEscrow.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Escrow.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ConditionalEscrow"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/payment/escrow/RefundEscrow.sol": {
+      "lastModificationDate": 1618224505793,
+      "contentHash": "777aadf554ef2ac81bc7a0a3eaa55af7",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/payment/escrow/RefundEscrow.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ConditionalEscrow.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "RefundEscrow"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/Initializable.sol": {
+      "lastModificationDate": 1618224505801,
+      "contentHash": "1efacd801320f8f9413700ddbcf00647",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.24 <0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/presets/ERC777PresetFixedSupply.sol": {
+      "lastModificationDate": 1618224505797,
+      "contentHash": "20c1abbf0d484041aec409194e738e1f",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/presets/ERC777PresetFixedSupply.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC777/ERC777.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "ERC777PresetFixedSupply"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/namespaces.sol": {
+      "lastModificationDate": 1618237487078,
+      "contentHash": "1811e11bcb1090192176168359c3fede",
+      "sourceName": "contracts/vocdoni/namespaces.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./base.sol",
+        "./common.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Namespaces"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/genesis.sol": {
+      "lastModificationDate": 1618237487079,
+      "contentHash": "8fe51f6172a65600135a5077bf4aef65",
+      "sourceName": "contracts/vocdoni/genesis.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./base.sol",
+        "./common.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Genesis"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1618224505774,
+      "contentHash": "44bd823687d58263d3b1da555235f93e",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/ERC165Checker.sol": {
+      "lastModificationDate": 1618224505782,
+      "contentHash": "8fd6b2ad5f8044f2e6a346ddf7dbfacd",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/ERC165Checker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC165Checker"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/ERC1820Implementer.sol": {
+      "lastModificationDate": 1618224505783,
+      "contentHash": "aab247a0f70f8616167be10710c9506c",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/ERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC1820Implementer.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC1820Implementer"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/introspection/IERC1820Implementer.sol": {
+      "lastModificationDate": 1618224505784,
+      "contentHash": "663251cfa9462cad6003a81bc876c938",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/introspection/IERC1820Implementer.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC1820Implementer"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1618224505788,
+      "contentHash": "159169e078460f380436878421b73431",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/proxy/Clones.sol": {
+      "lastModificationDate": 1618224505799,
+      "contentHash": "fc407ad42a493624854f6b33c44e9b00",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/Create2.sol": {
+      "lastModificationDate": 1618224505832,
+      "contentHash": "17a4b4fc2d10b81889d9d34036656a34",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/Create2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Create2"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1618224505836,
+      "contentHash": "1c60f58cee45c61469e1aea31e4dd879",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/openzeppelin/utils/SafeCast.sol": {
+      "lastModificationDate": 1618224505837,
+      "contentHash": "c227dcf457382aabf2d78218f6457799",
+      "sourceName": "contracts/vocdoni/vendor/openzeppelin/utils/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/registry/ENS.sol": {
+      "lastModificationDate": 1618224505842,
+      "contentHash": "88ffa32bed9de9b1fa11b7319b10e457",
+      "sourceName": "contracts/vocdoni/vendor/registry/ENS.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ENS"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/PublicResolver.sol": {
+      "lastModificationDate": 1618224784796,
+      "contentHash": "da904152c65fbbc031cefa14fe16223d",
+      "sourceName": "contracts/vocdoni/vendor/resolver/PublicResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../registry/ENS.sol",
+        "./profiles/ABIResolver.sol",
+        "./profiles/AddrResolver.sol",
+        "./profiles/ContentHashResolver.sol",
+        "./profiles/InterfaceResolver.sol",
+        "./profiles/NameResolver.sol",
+        "./profiles/PubkeyResolver.sol",
+        "./profiles/TextResolver.sol",
+        "./profiles/TextListResolver.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PublicResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/ABIResolver.sol": {
+      "lastModificationDate": 1618224505845,
+      "contentHash": "8307ef5a7c8912d55f506d9fd16ecbf9",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/ABIResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ABIResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/AddrResolver.sol": {
+      "lastModificationDate": 1618224505846,
+      "contentHash": "e5aaffa61020e0bc60c3b98918f97a0d",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/AddrResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AddrResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/ContentHashResolver.sol": {
+      "lastModificationDate": 1618224505846,
+      "contentHash": "c63265eefc3332ae1a8fd70a8d98e26f",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/ContentHashResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ContentHashResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/InterfaceResolver.sol": {
+      "lastModificationDate": 1618224505847,
+      "contentHash": "8d13059b017ecd403748570593a2f10a",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/InterfaceResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol",
+        "./AddrResolver.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "InterfaceResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/NameResolver.sol": {
+      "lastModificationDate": 1618224505847,
+      "contentHash": "95ecb799330f81fb40bc5bbf479a0a93",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/NameResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "NameResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/PubkeyResolver.sol": {
+      "lastModificationDate": 1618224505848,
+      "contentHash": "6947ee947f9f3f5ed4c5890569e8000b",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/PubkeyResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PubkeyResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/TextResolver.sol": {
+      "lastModificationDate": 1618224505849,
+      "contentHash": "c94cd096fdeb55bd6b3f5b2436ee84d9",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/TextResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "TextResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/profiles/TextListResolver.sol": {
+      "lastModificationDate": 1618224505848,
+      "contentHash": "509393ffe5d835c8c0b22015755217ef",
+      "sourceName": "contracts/vocdoni/vendor/resolver/profiles/TextListResolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ResolverBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "TextListResolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/ResolverBase.sol": {
+      "lastModificationDate": 1618224505845,
+      "contentHash": "00dd6161ead6b8cb96cde68a4a38a525",
+      "sourceName": "contracts/vocdoni/vendor/resolver/ResolverBase.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ResolverBase"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/registry/ENSRegistry.sol": {
+      "lastModificationDate": 1618224505843,
+      "contentHash": "5e87370d85543b313094d1f93ebabdaf",
+      "sourceName": "contracts/vocdoni/vendor/registry/ENSRegistry.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ENS.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ENSRegistry"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/resolver/Resolver.sol": {
+      "lastModificationDate": 1618224505844,
+      "contentHash": "ac0a88ff64337a4cb436d21aa45e583e",
+      "sourceName": "contracts/vocdoni/vendor/resolver/Resolver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Resolver"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/vocdoni/vendor/rlp/RLPReader.sol": {
+      "lastModificationDate": 1618224505850,
+      "contentHash": "8de6fea702da8051733d7036b6c07e7f",
+      "sourceName": "contracts/vocdoni/vendor/rlp/RLPReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.7.0"
+      ],
+      "artifacts": [
+        "RLPReader"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/GovernBaseFactory.sol": {
+      "lastModificationDate": 1618247927701,
+      "contentHash": "6838f5b6958e2c8c47fb7378deb468b9",
+      "sourceName": "contracts/govern/GovernBaseFactory.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./govern-token/GovernTokenFactory.sol",
+        "../vocdoni/vendor/openzeppelin/token/ERC20/IERC20.sol",
+        "./pipelines/GovernQueue.sol",
+        "./GovernRegistry.sol",
+        "./core-factories/GovernFactory.sol",
+        "./core-factories/GovernQueueFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "GovernBaseFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/govern-token/GovernTokenFactory.sol": {
+      "lastModificationDate": 1618247011315,
+      "contentHash": "55eb7809d8e5b3cd4683777fc5682e94",
+      "sourceName": "contracts/govern/govern-token/GovernTokenFactory.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol",
+        "../erc3k/IERC3000Executor.sol",
+        "./GovernToken.sol",
+        "./GovernMinter.sol",
+        "./MerkleDistributor.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "GovernTokenFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/pipelines/GovernQueue.sol": {
+      "lastModificationDate": 1618247890284,
+      "contentHash": "4496feb1dc712d5ea12b5b415245ed7b",
+      "sourceName": "contracts/govern/pipelines/GovernQueue.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/acl/ACL.sol",
+        "@aragon/govern-contract-utils/contracts/adaptative-erc165/AdaptativeERC165.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol",
+        "../../vocdoni/vendor/openzeppelin/math/SafeMath.sol",
+        "../erc3k/IERC3000.sol",
+        "../protocol/IArbitrable.sol",
+        "../protocol/IArbitrator.sol",
+        "../utils/DepositLib.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "GovernQueue",
+        "GovernQueueStateLib"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/GovernRegistry.sol": {
+      "lastModificationDate": 1618245210292,
+      "contentHash": "2e808eeaf8b760f1e2f9103954fef81b",
+      "sourceName": "contracts/govern/GovernRegistry.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./erc3k/IERC3000.sol",
+        "./erc3k/IERC3000Executor.sol",
+        "./erc3k/IERC3000Registry.sol",
+        "@aragon/govern-contract-utils/contracts/erc165/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "GovernRegistry"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/core-factories/GovernFactory.sol": {
+      "lastModificationDate": 1618244795262,
+      "contentHash": "df3e2340401e2213c4e3445689d29c8e",
+      "sourceName": "contracts/govern/core-factories/GovernFactory.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol",
+        "@aragon/govern-contract-utils/contracts/address-utils/AddressUtils.sol",
+        "../erc3k/IERC3000.sol",
+        "../Govern.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "GovernFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/core-factories/GovernQueueFactory.sol": {
+      "lastModificationDate": 1618240718943,
+      "contentHash": "8a97eacdd1df59288e9f6bc2ef3c5b0b",
+      "sourceName": "contracts/govern/core-factories/GovernQueueFactory.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol",
+        "../pipelines/GovernQueue.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "GovernQueueFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/govern-token/GovernToken.sol": {
+      "lastModificationDate": 1618246990270,
+      "contentHash": "9f7d63c5558828ec816ea24c39d7a26f",
+      "sourceName": "contracts/govern/govern-token/GovernToken.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/initializable/Initializable.sol",
+        "../../vocdoni/vendor/openzeppelin/math/SafeMath.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "GovernToken"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/govern-token/GovernMinter.sol": {
+      "lastModificationDate": 1618246937373,
+      "contentHash": "0ad13e559c7bdcacc0210c4996488ebf",
+      "sourceName": "contracts/govern/govern-token/GovernMinter.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/acl/ACL.sol",
+        "@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol",
+        "./GovernToken.sol",
+        "./MerkleDistributor.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "GovernMinter"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/govern-token/MerkleDistributor.sol": {
+      "lastModificationDate": 1618247311694,
+      "contentHash": "3c8177b323e203926dbbed1727aeef08",
+      "sourceName": "contracts/govern/govern-token/MerkleDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/cryptography/MerkleProof.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/ERC20.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol",
+        "@aragon/govern-contract-utils/contracts/initializable/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "MerkleDistributor"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/initializable/Initializable.sol": {
+      "lastModificationDate": 1618244862429,
+      "contentHash": "272c21a5974f5669523cb14d3d616a84",
+      "sourceName": "@aragon/govern-contract-utils/contracts/initializable/Initializable.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/acl/ACL.sol": {
+      "lastModificationDate": 1618244862427,
+      "contentHash": "22f884585c8ebbe83efc7ab85160dd03",
+      "sourceName": "@aragon/govern-contract-utils/contracts/acl/ACL.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../initializable/Initializable.sol",
+        "./IACLOracle.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "ACL",
+        "ACLData"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/acl/IACLOracle.sol": {
+      "lastModificationDate": 1618244862427,
+      "contentHash": "1b9fca0a89feedd9d7f5a8250b916ddd",
+      "sourceName": "@aragon/govern-contract-utils/contracts/acl/IACLOracle.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "IACLOracle"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/erc3k/IERC3000Registry.sol": {
+      "lastModificationDate": 1618246432810,
+      "contentHash": "84084375a390cba6dd3d25fb7b444788",
+      "sourceName": "contracts/govern/erc3k/IERC3000Registry.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3000.sol",
+        "./IERC3000Executor.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "IERC3000Registry"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/Govern.sol": {
+      "lastModificationDate": 1618244822184,
+      "contentHash": "12cc27dd0e990334a511f92b1b9d643c",
+      "sourceName": "contracts/govern/Govern.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@aragon/govern-contract-utils/contracts/acl/ACL.sol",
+        "@aragon/govern-contract-utils/contracts/adaptative-erc165/AdaptativeERC165.sol",
+        "@aragon/govern-contract-utils/contracts/bitmaps/BitmapLib.sol",
+        "./erc3k/IERC3000.sol",
+        "./erc3k/IERC3000Executor.sol",
+        "./erc1271/ERC1271.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "Govern"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/bitmaps/BitmapLib.sol": {
+      "lastModificationDate": 1618244862429,
+      "contentHash": "718d38e5863c0b27f925d8b26a743b3c",
+      "sourceName": "@aragon/govern-contract-utils/contracts/bitmaps/BitmapLib.sol",
+      "solcConfig": {
+        "version": "0.6.8",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.8"
+      ],
+      "artifacts": [
+        "BitmapLib"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/utils/DepositLib.sol": {
+      "lastModificationDate": 1618247670475,
+      "contentHash": "7547e95b5cf05cf175f21b77f0339c1a",
+      "sourceName": "contracts/govern/utils/DepositLib.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../erc3k/ERC3000Data.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/ERC20.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "DepositLib"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/erc3k/ERC3000Data.sol": {
+      "lastModificationDate": 1618244723098,
+      "contentHash": "813b0b69a50b28cada9c982f55d98066",
+      "sourceName": "contracts/govern/erc3k/ERC3000Data.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC3000Executor.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "ERC3000Data"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/erc3k/IERC3000Executor.sol": {
+      "lastModificationDate": 1618244723132,
+      "contentHash": "e82a105a7c18c3183804585ae5cd0fb1",
+      "sourceName": "contracts/govern/erc3k/IERC3000Executor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC3000Data.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "IERC3000Executor"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/erc1271/ERC1271.sol": {
+      "lastModificationDate": 1618241098814,
+      "contentHash": "95491972723747e9b77352c6a19083bf",
+      "sourceName": "contracts/govern/erc1271/ERC1271.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "ERC1271"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/erc3k/IERC3000.sol": {
+      "lastModificationDate": 1618244723115,
+      "contentHash": "4ea7290f9301e538962b1e95106f26f5",
+      "sourceName": "contracts/govern/erc3k/IERC3000.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC3000Data.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "IERC3000"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/address-utils/AddressUtils.sol": {
+      "lastModificationDate": 1618244862428,
+      "contentHash": "e8b9489fc9bfb75301eb779d9d07ac51",
+      "sourceName": "@aragon/govern-contract-utils/contracts/address-utils/AddressUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "AddressUtils"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol": {
+      "lastModificationDate": 1618244862429,
+      "contentHash": "0f924226e4246ce55af4acb65968f141",
+      "sourceName": "@aragon/govern-contract-utils/contracts/minimal-proxies/ERC1167ProxyFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "ERC1167ProxyFactory"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/erc165/ERC165.sol": {
+      "lastModificationDate": 1618244862429,
+      "contentHash": "9fc9cb7393eeff2078e0bc6aa62b00d4",
+      "sourceName": "@aragon/govern-contract-utils/contracts/erc165/ERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@aragon/govern-contract-utils/contracts/adaptative-erc165/AdaptativeERC165.sol": {
+      "lastModificationDate": 1618244862428,
+      "contentHash": "5e7fac3cbd18fa03e3944f97fe86eadd",
+      "sourceName": "@aragon/govern-contract-utils/contracts/adaptative-erc165/AdaptativeERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../erc165/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "AdaptativeERC165"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/node_modules/@openzeppelin/contracts/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1618244860520,
+      "contentHash": "44bd823687d58263d3b1da555235f93e",
+      "sourceName": "@openzeppelin/contracts/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/protocol/IArbitrator.sol": {
+      "lastModificationDate": 1618247335013,
+      "contentHash": "719949a3bd55d87254121579be51a00f",
+      "sourceName": "contracts/govern/protocol/IArbitrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/SafeERC20.sol",
+        "../../vocdoni/vendor/openzeppelin/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "IArbitrator"
+      ]
+    },
+    "/Users/cesar/dev/dorg/aragon/ecosystem/aragon-factory/contracts/govern/protocol/IArbitrable.sol": {
+      "lastModificationDate": 1618241058818,
+      "contentHash": "4cf608c1a8376bc18b912fc1b870940f",
+      "sourceName": "contracts/govern/protocol/IArbitrable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 2000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IArbitrator.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.8"
+      ],
+      "artifacts": [
+        "IArbitrable"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IArbitrable",
+  "sourceName": "contracts/govern/protocol/IArbitrable.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "contract IArbitrator",
+          "name": "arbitrator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "disputeId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "ruling",
+          "type": "uint256"
+        }
+      ],
+      "name": "Ruled",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

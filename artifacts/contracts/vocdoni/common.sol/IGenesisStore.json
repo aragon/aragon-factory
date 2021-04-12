@@ -1,0 +1,332 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IGenesisStore",
+  "sourceName": "contracts/vocdoni/common.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        }
+      ],
+      "name": "ChainRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        }
+      ],
+      "name": "GenesisUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "OracleAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "OracleRemoved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "validatorPublicKey",
+          "type": "bytes"
+        }
+      ],
+      "name": "ValidatorAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "validatorPublicKey",
+          "type": "bytes"
+        }
+      ],
+      "name": "ValidatorRemoved",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "addOracle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "validatorPublicKey",
+          "type": "bytes"
+        }
+      ],
+      "name": "addValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "genesis",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "validators",
+          "type": "bytes[]"
+        },
+        {
+          "internalType": "address[]",
+          "name": "oracles",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getChainCount",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "isOracle",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "validatorPublicKey",
+          "type": "bytes"
+        }
+      ],
+      "name": "isValidator",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "genesis",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes[]",
+          "name": "validators",
+          "type": "bytes[]"
+        },
+        {
+          "internalType": "address[]",
+          "name": "oracles",
+          "type": "address[]"
+        }
+      ],
+      "name": "newChain",
+      "outputs": [
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "idx",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "removeOracle",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "idx",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "validatorPublicKey",
+          "type": "bytes"
+        }
+      ],
+      "name": "removeValidator",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "string",
+          "name": "newGenesis",
+          "type": "string"
+        }
+      ],
+      "name": "setGenesis",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

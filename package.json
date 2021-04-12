@@ -1,0 +1,28 @@
+{
+  "name": "@aragon/factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aragon/aragon-factory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aragon/aragon-factory/issues"
+  },
+  "homepage": "https://github.com/aragon/aragon-factory#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dvote-solidity": "^1.0.0",
+    "@aragon/govern-contract-utils": "^1.0.0-beta.12"
+  },
+  "devDependencies": {
+    "hardhat": "^2.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}

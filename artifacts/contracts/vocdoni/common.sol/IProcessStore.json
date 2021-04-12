@@ -1,0 +1,428 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IProcessStore",
+  "sourceName": "contracts/vocdoni/common.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "namespace",
+          "type": "uint32"
+        }
+      ],
+      "name": "CensusUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "namespace",
+          "type": "uint32"
+        }
+      ],
+      "name": "NewProcess",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "processPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "ProcessPriceUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "namespace",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "newIndex",
+          "type": "uint8"
+        }
+      ],
+      "name": "QuestionIndexUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint32",
+          "name": "namespace",
+          "type": "uint32"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum IProcessStore.Status",
+          "name": "status",
+          "type": "uint8"
+        }
+      ],
+      "name": "StatusUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "Withdraw",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "internalType": "uint8[3]",
+          "name": "mode_envelopeType_censusOrigin",
+          "type": "uint8[3]"
+        },
+        {
+          "internalType": "address",
+          "name": "entityAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string[3]",
+          "name": "metadata_censusRoot_censusUri",
+          "type": "string[3]"
+        },
+        {
+          "internalType": "uint32[2]",
+          "name": "startBlock_blockCount",
+          "type": "uint32[2]"
+        },
+        {
+          "internalType": "enum IProcessStore.Status",
+          "name": "status",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8[5]",
+          "name": "questionIndex_questionCount_maxCount_maxValue_maxVoteOverwrites",
+          "type": "uint8[5]"
+        },
+        {
+          "internalType": "uint16[2]",
+          "name": "maxTotalCost_costExponent",
+          "type": "uint16[2]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "evmBlockHeight",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getCreationInstance",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "entityAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getEntityProcessCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "entityAddress",
+          "type": "address"
+        }
+      ],
+      "name": "getNextProcessId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getParamsSignature",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "entityAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "processCountIndex",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint32",
+          "name": "namespaceId",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "chainId",
+          "type": "uint32"
+        }
+      ],
+      "name": "getProcessId",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "incrementQuestionIndex",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8[3]",
+          "name": "mode_envelopeType_censusOrigin",
+          "type": "uint8[3]"
+        },
+        {
+          "internalType": "address",
+          "name": "tokenContractAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "string[3]",
+          "name": "metadata_censusRoot_censusUri",
+          "type": "string[3]"
+        },
+        {
+          "internalType": "uint32[2]",
+          "name": "startBlock_blockCount",
+          "type": "uint32[2]"
+        },
+        {
+          "internalType": "uint8[4]",
+          "name": "questionCount_maxCount_maxValue_maxVoteOverwrites",
+          "type": "uint8[4]"
+        },
+        {
+          "internalType": "uint16[2]",
+          "name": "maxTotalCost_costExponent",
+          "type": "uint16[2]"
+        },
+        {
+          "internalType": "uint256",
+          "name": "evmBlockHeight",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "paramsSignature",
+          "type": "bytes32"
+        }
+      ],
+      "name": "newProcess",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "string",
+          "name": "censusRoot",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "censusUri",
+          "type": "string"
+        }
+      ],
+      "name": "setCensus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "processPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "setProcessPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "processId",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "enum IProcessStore.Status",
+          "name": "newStatus",
+          "type": "uint8"
+        }
+      ],
+      "name": "setStatus",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdraw",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
