@@ -18,6 +18,7 @@ library DepositLib {
     function collectFrom(ERC3000Data.Collateral memory _collateral, address _from) internal {
         if (_collateral.amount > 0) {
             ERC20 token = ERC20(_collateral.token);
+            //@TODO: Fix
             // require(token.safeTransferFrom(_from, address(this), _collateral.amount), "deposit: bad token lock");
 
             emit Locked(_collateral.token, _from, _collateral.amount);
@@ -27,6 +28,7 @@ library DepositLib {
     function releaseTo(ERC3000Data.Collateral memory _collateral, address _to) internal {
         if (_collateral.amount > 0) {
             ERC20 token = ERC20(_collateral.token);
+            //@TODO: Fix
             // require(token.safeTransfer(_to, _collateral.amount), "deposit: bad token release");
 
             emit Unlocked(_collateral.token, _to, _collateral.amount);

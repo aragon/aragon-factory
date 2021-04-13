@@ -14,15 +14,25 @@
   },
   "homepage": "https://github.com/aragon/aragon-factory#readme",
   "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "dvote-solidity": "^1.0.0",
-    "@aragon/govern-contract-utils": "^1.0.0-beta.12"
+    "@aragon/govern-contract-utils": "^1.0.0-beta.12",
+    "dotenv": "^8.2.0",
+    "dvote-solidity": "^1.0.0"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^6.0.0",
+    "@typechain/hardhat": "^1.0.1",
+    "ethers": "^5.1.0",
     "hardhat": "^2.1.2",
+    "hardhat-deploy": "^0.7.4",
     "ts-node": "^9.1.1",
+    "typechain": "^4.0.2",
     "typescript": "^4.2.4"
   }
 }

@@ -207,15 +207,18 @@ contract GovernQueue is IERC3000, IArbitrable, AdaptativeERC165, ACL {
         IArbitrator arbitrator = IArbitrator(_container.config.resolver);
         (address recipient, ERC20 feeToken, uint256 feeAmount) =
             arbitrator.getDisputeFees();
+        // @TODO: Fix
         // require(
         //     feeToken.safeTransferFrom(msg.sender, address(this), feeAmount),
         //     "queue: bad fee pull"
         // );
+        // @TODO: Fix
         // require(
         //     feeToken.safeApprove(recipient, feeAmount),
         //     "queue: bad approve"
         // );
         disputeId = arbitrator.createDispute(2, abi.encode(_container)); // create dispute sending full container ABI encoded (could prob just send payload to save gas)
+        // @TODO: Fix
         // require(feeToken.safeApprove(recipient, 0), "queue: bad reset"); // reset just in case non-compliant tokens (that fail on non-zero to non-zero approvals) are used
 
         // submit both arguments as evidence and close evidence period. no more evidence can be submitted and a settlement can't happen (could happen off-protocol)

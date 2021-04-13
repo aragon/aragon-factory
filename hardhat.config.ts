@@ -1,7 +1,13 @@
 import { HardhatUserConfig } from "hardhat/config";
+import { config as dotenvConfig } from "dotenv";
+import { resolve } from "path";
 
-// import '@nomiclabs/hardhat-ethers'
-// import '@nomiclabs/hardhat-waffle'
+dotenvConfig({ path: resolve(__dirname, "./.env") });
+
+import "@nomiclabs/hardhat-ethers";
+import "@nomiclabs/hardhat-waffle";
+import "hardhat-deploy";
+
 // import 'hardhat-abi-exporter'
 // import 'hardhat-typechain'
 // import 'solidity-coverage'
@@ -32,10 +38,15 @@ const config: HardhatUserConfig = {
       },
     ],
   },
+  namedAccounts: {
+    deployer: 0,
+  },
   networks: {
     rinkeby: {
       url: "https://rinkeby.infura.io/v3/b76cba91dc954ceebff27244923224b1",
-      accounts,
+      accounts: {
+        mnemonic: ETH_KEY!,
+      },
     },
   },
 };
