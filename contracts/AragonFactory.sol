@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity 0.6.8;
 
-import "./vocdoni/token-storage-proof.sol";
-import "./govern/GovernBaseFactory.sol";
+import "https://github.com/aragon/aragon-factory/blob/develop/contracts/govern/GovernBaseFactory.sol";
+import "https://github.com/vocdoni/dvote-solidity/blob/main/contracts/token-storage-proof.sol";
 
 contract AragonFactory {
     TokenStorageProof tokenProof;
