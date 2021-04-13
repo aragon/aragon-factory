@@ -7,6 +7,8 @@ dotenvConfig({ path: resolve(__dirname, "./.env") });
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-deploy";
+import "./tasks/register";
+import "./tasks/create";
 
 // import 'hardhat-abi-exporter'
 // import 'hardhat-typechain'
@@ -43,7 +45,13 @@ const config: HardhatUserConfig = {
   },
   networks: {
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/b76cba91dc954ceebff27244923224b1",
+      url: "https://eth-rinkeby.alchemyapi.io/v2/Zs10tQqfrIf1s-np9tQB0RV6BijG0zIe",
+      accounts: {
+        mnemonic: ETH_KEY!,
+      },
+    },
+    goerli: {
+      url: "https://goerli.infura.io/v3/b76cba91dc954ceebff27244923224b1",
       accounts: {
         mnemonic: ETH_KEY!,
       },

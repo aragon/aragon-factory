@@ -13,7 +13,6 @@ import "./GovernRegistry.sol";
 import "./core-factories/GovernFactory.sol";
 import "./core-factories/GovernQueueFactory.sol";
 
-
 contract GovernBaseFactory {
     address internal constant ANY_ADDR = address(-1);
 
