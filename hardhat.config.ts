@@ -15,7 +15,6 @@ import "./tasks/create";
 // import 'solidity-coverage'
 
 const ETH_KEY = process.env.ETH_KEY;
-const accounts = ETH_KEY ? ETH_KEY.split(",") : [];
 
 const config: HardhatUserConfig = {
   solidity: {

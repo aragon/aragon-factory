@@ -28,4 +28,6 @@ contract AragonFactory {
             _useProxies
         );
     }
+
+    function registerToken() {}
 }
